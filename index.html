@@ -32,35 +32,46 @@
       <section>
         <div id="title">
           <h1>obspyDMT</h1>
-          <p>A Python Toolbox for Retrieving and Processing of Massive Seismological Datasets</p>
+          <p>A Python Toolbox for Retrieving and Processing of Large Seismological Datasets</p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/kasra-hosseini">kasra-hosseini</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <p>Welcome!</p>
+        <p>obspyDMT (obspy Data Management Tool) is a command line tool for retrieving, processing and management of large seismological datasets in a fully automatic way which can be run in serial or in parallel.</p>
 
-<p>obspyDMT (obspy Data Management Tool) is a command line tool for retrieving, processing and management of massive seismological data in a fully automatic way which can be run in serial or in parallel. </p>
-
-<p>This tool is developed to mainly address the following tasks automatically: </p>
+<p>This tool is developed mainly to address the following tasks automatically:</p>
 
 <ol>
-<li>Retrieval of waveforms (MSEED or SAC), stationXML/response files and metadata from FDSN and ArcLink archives. This could be done in <em>serial</em> or in <em>parallel</em> for single or large requests.</li>
+<li>Retrieval of waveforms (MSEED or SAC), stationXML/response files and metadata from FDSN and ArcLink archives. This could be done in serial or in parallel for single or large requests.</li>
 <li>Supports both event-based and continuous requests.</li>
-<li>Extracting the information of all the events via user-defined options (time span, magnitude, depth and event location) from IRIS.</li>
+<li>Extracting the information of all the events via user-defined options (time span, magnitude, depth and event location) from IRIS, NEIC and GCMT. Therefore, moment tensor information can also be retrieved.</li>
 <li>Updating existing archives (waveforms, stationXML/response files and metadata).</li>
-<li>Processing the data in <em>serial</em> or in <em>parallel</em> (e.g. <em>removing the trend of the time series, tapering, filtering and Instrument correction</em>).</li>
-<li>Management of large seismic datasets.</li>
-<li>Plotting tools (events and/or station locations, ray coverage (event-station pair), epicentral-distance plots for all archived waveforms and seismicity maps).</li>
+<li>Processing the data in serial or in parallel (e.g. removing the trend of the time series, tapering, filtering and Instrument correction).</li>
+<li>Management of large seismological datasets.</li>
+<li>Plotting tools (events and/or station locations, ray coverage (event-station pair), epicentral-distance plots for all archived waveforms and seismicity maps). In case that the moment tensor information is retrieved, it is also possible to plot the beachballs at the location of events.</li>
 <li>Exploring stationXML files by plotting the instrument response for all stages and/or for each stage.</li>
 </ol>
 
-<p>For more information about the project and a tutorial about the code, refer to:
+<p>For more information about the project:
 <a href="https://github.com/kasra-hosseini/obspyDMT">https://github.com/kasra-hosseini/obspyDMT</a></p>
+
+<p>and a tutorial about the code:
+<a href="https://github.com/kasra-hosseini/obspyDMT/blob/master/README.rst">https://github.com/kasra-hosseini/obspyDMT/blob/master/README.rst</a></p>
       </section>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-60916984-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
